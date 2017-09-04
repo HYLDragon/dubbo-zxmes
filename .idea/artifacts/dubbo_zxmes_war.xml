@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubbo-zxmes:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dubbo-zxmes.war">
+      <element id="artifact" artifact-name="dubbo-zxmes:war exploded" />
+    </root>
+  </artifact>
+</component>
