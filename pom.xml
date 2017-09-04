@@ -3,11 +3,17 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.zx.mes.hyl</groupId>
   <artifactId>dubbo-zxmes</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>dubbo-zxmes Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
+    <modules>
+      <module>dubbo-authority-api</module>
+      <module>dubbo-authority-consumer</module>
+      <module>dubbo-authority-provider</module>
+      <module>dubbo-authority-entity</module>
+      <module>dubbo-common</module>
+    </modules>
+
+    <dependencies>
     <!-- 3.x编程式 4.x注解方式 -->
     <dependency>
       <groupId>junit</groupId>
@@ -81,7 +87,7 @@
       <artifactId>spring-webmvc</artifactId>
       <version>4.3.8.RELEASE</version>
     </dependency>
-    
+<!--mybatis-->
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
@@ -99,6 +105,19 @@
       <version>5.0.1</version>
     </dependency>
     <!---->
+
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>5.2.10.Final</version>
+      </dependency>
+
+      <!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>5.2.10.Final</version>
+      </dependency>
 
     <dependency>
       <groupId>antlr</groupId>
@@ -206,7 +225,17 @@
       <artifactId>servlet-api</artifactId>
       <version>3.0-alpha-1</version>
     </dependency>
-
+<!--dubbo-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>dubbo</artifactId>
+      <version>2.5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.zookeeper</groupId>
+      <artifactId>zookeeper</artifactId>
+      <version>3.3.3</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>dubbo-zxmes</finalName>
