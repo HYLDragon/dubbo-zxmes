@@ -6,18 +6,18 @@ import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.zx.mes.hyl.pageModel.Json;
+import com.zx.mes.hyl.pageModel.Resource;
+import com.zx.mes.hyl.pageModel.SessionInfo;
+import com.zx.mes.hyl.pageModel.Tree;
+import com.zx.mes.hyl.service.ResourceServiceI;
+import com.zx.mes.hyl.service.ResourceTypeServiceI;
+import com.zx.mes.hyl.util.ConfigUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.zx.mes.pageModel.Json;
-import com.zx.mes.pageModel.Resource;
-import com.zx.mes.pageModel.SessionInfo;
-import com.zx.mes.pageModel.Tree;
-import com.zx.mes.service.admin.ResourceServiceI;
-import com.zx.mes.service.admin.ResourceTypeServiceI;
-import com.zx.mes.util.ConfigUtil;
 
 /**
  * 资源控制器

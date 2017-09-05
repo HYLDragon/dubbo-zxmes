@@ -6,22 +6,19 @@ import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.zx.mes.hyl.pageModel.*;
+import com.zx.mes.hyl.service.ResourceServiceI;
+import com.zx.mes.hyl.service.RoleServiceI;
+import com.zx.mes.hyl.service.UserServiceI;
+import com.zx.mes.hyl.util.ConfigUtil;
+import com.zx.mes.hyl.util.IpUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.zx.mes.pageModel.DataGrid;
-import com.zx.mes.pageModel.Json;
-import com.zx.mes.pageModel.PageHelper;
-import com.zx.mes.pageModel.SessionInfo;
-import com.zx.mes.pageModel.User;
-import com.zx.mes.service.admin.ResourceServiceI;
-import com.zx.mes.service.admin.RoleServiceI;
-import com.zx.mes.service.admin.UserServiceI;
-import com.zx.mes.util.ConfigUtil;
-import com.zx.mes.util.IpUtil;
+
 
 import com.alibaba.fastjson.JSON;
 
@@ -148,7 +145,7 @@ public class UserController extends BaseController {
 	public String addPage(HttpServletRequest request) {
 		User u = new User();
 		u.setId(UUID.randomUUID().toString());
-		request.setAttribute("user", u);
+		request.setAttribute("src/main/webapp/user", u);
 		return "/admin/userAdd";
 	}
 
@@ -181,7 +178,7 @@ public class UserController extends BaseController {
 	@RequestMapping("/editPage")
 	public String editPage(HttpServletRequest request, String id) {
 		User u = userService.get(id);
-		request.setAttribute("user", u);
+		request.setAttribute("src/main/webapp/user", u);
 		return "/admin/userEdit";
 	}
 
@@ -259,7 +256,7 @@ public class UserController extends BaseController {
 		request.setAttribute("ids", ids);
 		if (ids != null && !ids.equalsIgnoreCase("") && ids.indexOf(",") == -1) {
 			User u = userService.get(ids);
-			request.setAttribute("user", u);
+			request.setAttribute("src/main/webapp/user", u);
 		}
 		return "/admin/userGrant";
 	}
@@ -290,7 +287,7 @@ public class UserController extends BaseController {
 	@RequestMapping("/editPwdPage")
 	public String editPwdPage(String id, HttpServletRequest request) {
 		User u = userService.get(id);
-		request.setAttribute("user", u);
+		request.setAttribute("src/main/webapp/user", u);
 		return "/admin/userEditPwd";
 	}
 
@@ -317,7 +314,7 @@ public class UserController extends BaseController {
 	 */
 	@RequestMapping("/editCurrentUserPwdPage")
 	public String editCurrentUserPwdPage() {
-		return "/user/userEditPwd";
+		return "/src/main/webapp/user/userEditPwd";
 	}
 
 	/**
@@ -358,7 +355,7 @@ public class UserController extends BaseController {
 	public String currentUserRolePage(HttpServletRequest request, HttpSession session) {
 		SessionInfo sessionInfo = (SessionInfo) session.getAttribute(ConfigUtil.getSessionInfoName());
 		request.setAttribute("userRoles", JSON.toJSONString(roleService.tree(sessionInfo)));
-		return "/user/userRole";
+		return "/src/main/webapp/user/userRole";
 	}
 
 	/**
@@ -370,7 +367,7 @@ public class UserController extends BaseController {
 	public String currentUserResourcePage(HttpServletRequest request, HttpSession session) {
 		SessionInfo sessionInfo = (SessionInfo) session.getAttribute(ConfigUtil.getSessionInfoName());
 		request.setAttribute("userResources", JSON.toJSONString(resourceService.allTree(sessionInfo)));
-		return "/user/userResource";
+		return "/src/main/webapp/user/userResource";
 	}
 
 	/**

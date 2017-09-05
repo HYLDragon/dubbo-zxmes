@@ -12,5 +12,6 @@
 
     <artifactId>dubbo-authority-entity</artifactId>
     <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
 
 </project>

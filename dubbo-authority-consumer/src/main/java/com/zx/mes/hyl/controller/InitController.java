@@ -2,11 +2,12 @@ package com.zx.mes.hyl.controller;
 
 import javax.servlet.http.HttpSession;
 
+import com.zx.mes.hyl.service.InitServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.zx.mes.service.admin.InitServiceI;
+
 
 /**
  * 初始化数据库控制器
