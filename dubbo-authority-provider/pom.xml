@@ -34,6 +34,7 @@
     </build>
 
     <artifactId>dubbo-authority-provider</artifactId>
+    <packaging>war</packaging>
     <dependencies>
         <dependency>
             <groupId>com.zx.mes.hyl</groupId>

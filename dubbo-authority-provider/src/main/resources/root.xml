@@ -17,9 +17,11 @@
 
 	<import resource="classpath:/spring/spring-druid.xml"/>
 
-	<import resource="classpath:/spring/spring-ehcache.xml"/>
+
 
 	<import resource="classpath:/spring/spring-hibernate.xml"/>
+
+	<!--<import resource="classpath:/spring/spring-ehcache.xml"/>-->
 
 	<import resource="classpath:/dubbo/dubbo-authority-provider.xml"/>
 </beans>
