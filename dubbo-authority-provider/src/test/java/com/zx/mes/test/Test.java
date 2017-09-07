@@ -18,7 +18,8 @@ public class Test {
     @org.junit.Test
     public void test (){
         ClassPathXmlApplicationContext ac=new ClassPathXmlApplicationContext("classpath:root.xml");
-        ac.getBean("baseDaoImpl");
-        logger.info(JSON.toJSONStringWithDateFormat("test","yyyy-MM-dd HH:mm:ss"));
+
+        Object object= ac.getBean("userServiceImpl");
+        logger.info(JSON.toJSONStringWithDateFormat(object,"yyyy-MM-dd HH:mm:ss"));
     }
 }

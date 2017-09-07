@@ -22,12 +22,14 @@ import com.zx.mes.hyl.service.UserServiceI;
 import com.zx.mes.hyl.util.MD5Util;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 
 
-@Service
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =UserServiceI.class,protocol = {"dubbo"},retries = 0)
+
+@Component
+@com.alibaba.dubbo.config.annotation.Service(interfaceClass =UserServiceI.class,protocol = {"dubbo"},retries = 0,
+		version = "1.0")
 public class UserServiceImpl implements UserServiceI {
 
 	@Autowired

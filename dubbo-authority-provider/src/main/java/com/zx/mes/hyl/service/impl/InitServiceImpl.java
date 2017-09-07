@@ -8,12 +8,14 @@ import com.zx.mes.hyl.model.*;
 import com.zx.mes.hyl.service.InitServiceI;
 import com.zx.mes.hyl.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
 
-@Service
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =InitServiceI.class,protocol = {"dubbo"},retries = 0)
+@Component
+@com.alibaba.dubbo.config.annotation.Service(interfaceClass =InitServiceI.class,protocol = {"dubbo"},retries = 0,
+		version = "1.0")
 public class InitServiceImpl implements InitServiceI {
 
 	@Autowired

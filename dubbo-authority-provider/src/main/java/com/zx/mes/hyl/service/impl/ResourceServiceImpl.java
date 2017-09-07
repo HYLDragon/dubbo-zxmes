@@ -18,12 +18,14 @@ import com.zx.mes.hyl.pageModel.Tree;
 import com.zx.mes.hyl.service.ResourceServiceI;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 
 
-@Service
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =ResourceServiceI.class,protocol = {"dubbo"},retries = 0)
+
+@Component
+@com.alibaba.dubbo.config.annotation.Service(interfaceClass =ResourceServiceI.class,protocol = {"dubbo"},retries = 0,
+		version = "1.0")
 public class ResourceServiceImpl implements ResourceServiceI {
 
 	@Autowired

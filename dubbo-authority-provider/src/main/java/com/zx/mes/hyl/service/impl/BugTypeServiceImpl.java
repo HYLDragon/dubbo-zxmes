@@ -7,12 +7,14 @@ import com.zx.mes.hyl.model.Tbugtype;
 import com.zx.mes.hyl.service.BugTypeServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 
 
-@Service
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =BugTypeServiceI.class,protocol = {"dubbo"},retries = 0)
+
+@Component
+@com.alibaba.dubbo.config.annotation.Service(interfaceClass =BugTypeServiceI.class,protocol = {"dubbo"},retries = 0,
+		version = "1.0")
 public class BugTypeServiceImpl implements BugTypeServiceI {
 
 	@Autowired

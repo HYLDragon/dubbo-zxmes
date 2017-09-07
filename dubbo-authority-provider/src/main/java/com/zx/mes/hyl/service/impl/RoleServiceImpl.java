@@ -19,12 +19,14 @@ import com.zx.mes.hyl.pageModel.Tree;
 import com.zx.mes.hyl.service.RoleServiceI;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
 
-@Service
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =RoleServiceI.class,protocol = {"dubbo"},retries = 0)
+@Component
+@com.alibaba.dubbo.config.annotation.Service(interfaceClass =RoleServiceI.class,protocol = {"dubbo"},retries = 0,
+		version = "1.0")
 public class RoleServiceImpl implements RoleServiceI {
 
 	@Autowired

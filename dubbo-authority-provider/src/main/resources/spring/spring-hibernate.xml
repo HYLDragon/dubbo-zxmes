@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:c="http://www.springframework.org/schema/c" xmlns:cache="http://www.springframework.org/schema/cache" xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
-		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
-		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
-		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
-		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
-		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
-		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
-		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- JNDI方式配置数据源 -->
 	<!-- <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"> <property name="jndiName" value="${jndiName}"></property> </bean> -->
@@ -22,6 +14,7 @@
 		<property name="password" value="${jdbc_password}" />
 		<!-- 这一项可配可不配，如果不配置druid会根据url自动识别dbType，
 			然后选择相应的driverClassName -->
+		<property name="driverClassName" value="${driverClassName}" />
 		<!-- 初始化连接大小 -->
 		<property name="initialSize" value="0" />
 		<!-- 连接池最大使用连接数量 -->
@@ -110,17 +103,17 @@
 			<tx:method name="*" propagation="REQUIRED" />
 		</tx:attributes>
 	</tx:advice>
-	
-	<!-- 
+
+	<!--
 		execution(* com.sample.service.impl..*.*(..))
 		 1、execution(): 表达式主体。
-		
+
 		 2、第一个*号：表示返回类型，*号表示所有的类型。
-		
+
 		 3、包名：表示需要拦截的包名，后面的两个句点表示当前包和当前包的所有子包，com.sample.service.impl包、子孙包下所有类的方法。
-		
+
 		 4、第二个*号：表示类名，*号表示所有的类。
-		
+
 		 5、*(..):最后这个星号表示方法名，*号表示所有的方法，后面括弧里面表示方法的参数，两个句点表示任何参数。
 	 -->
 	<aop:config>

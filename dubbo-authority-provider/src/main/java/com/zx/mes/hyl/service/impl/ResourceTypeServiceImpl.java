@@ -10,12 +10,13 @@ import com.zx.mes.hyl.service.ResourceTypeServiceI;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 
-@Service
+
+@Component
 @com.alibaba.dubbo.config.annotation.Service(interfaceClass = ResourceTypeServiceI.class,protocol = {"dubbo"},retries
-		= 0)
+		= 0,version = "1.0")
 public class ResourceTypeServiceImpl implements ResourceTypeServiceI {
 
 	@Autowired

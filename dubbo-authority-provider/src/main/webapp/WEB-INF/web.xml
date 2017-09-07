@@ -50,9 +50,9 @@
 
 
   <!--&lt;!&ndash; 防止内存溢出监听器 &ndash;&gt;-->
-  <!--<listener>-->
-    <!--<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>-->
-  <!--</listener>-->
+  <listener>
+    <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+  </listener>
 
   <!--&lt;!&ndash; druid监控页面mapping &ndash;&gt;-->
   <!--<servlet-mapping>-->
