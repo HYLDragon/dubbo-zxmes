@@ -63,6 +63,7 @@
           <element id="library" level="project" name="Maven: org.jboss.netty:netty:3.2.5.Final" />
           <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.3.3" />
           <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
+          <element id="library" level="project" name="Maven: com.101tec:zkclient:0.10" />
         </element>
       </element>
       <element id="directory" name="META-INF">

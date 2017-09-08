@@ -2,6 +2,7 @@ package com.zx.mes.hyl.service.impl;
 ;
 import java.util.*;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.zx.mes.hyl.dao.BugDaoI;
 import com.zx.mes.hyl.dao.BugTypeDaoI;
 import com.zx.mes.hyl.model.Tbug;
@@ -17,8 +18,9 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass=com.zx.mes.hyl.service.BugServiceI.class, protocol={"dubbo"},
-		retries=0,version = "1.0")
+//@com.alibaba.dubbo.config.annotation.Service(interfaceClass=com.zx.mes.hyl.service.BugServiceI.class, protocol={"dubbo"},
+//		retries=0,version = "1.0")
+//@Service(version = "1.0")
 public class BugServiceImpl implements BugServiceI {
 
 	@Autowired

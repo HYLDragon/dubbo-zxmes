@@ -3,6 +3,7 @@ package com.zx.mes.hyl.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.zx.mes.hyl.dao.ResourceTypeDaoI;
 import com.zx.mes.hyl.model.Tresourcetype;
 import com.zx.mes.hyl.pageModel.ResourceType;
@@ -15,8 +16,9 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass = ResourceTypeServiceI.class,protocol = {"dubbo"},retries
-		= 0,version = "1.0")
+//@com.alibaba.dubbo.config.annotation.Service(interfaceClass = ResourceTypeServiceI.class,protocol = {"dubbo"},retries
+//		= 0,version = "1.0")
+@Service(version = "1.0")
 public class ResourceTypeServiceImpl implements ResourceTypeServiceI {
 
 	@Autowired

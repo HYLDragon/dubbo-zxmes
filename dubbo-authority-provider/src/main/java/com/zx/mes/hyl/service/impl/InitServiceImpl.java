@@ -3,19 +3,21 @@ package com.zx.mes.hyl.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.zx.mes.hyl.dao.*;
 import com.zx.mes.hyl.model.*;
 import com.zx.mes.hyl.service.InitServiceI;
 import com.zx.mes.hyl.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+
 
 
 
 @Component
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =InitServiceI.class,protocol = {"dubbo"},retries = 0,
-		version = "1.0")
+//@com.alibaba.dubbo.config.annotation.Service(interfaceClass =InitServiceI.class,protocol = {"dubbo"},retries = 0,
+//		version = "1.0")
+@Service(version = "1.0")
 public class InitServiceImpl implements InitServiceI {
 
 	@Autowired

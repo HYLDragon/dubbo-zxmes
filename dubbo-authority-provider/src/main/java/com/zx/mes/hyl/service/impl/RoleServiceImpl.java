@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.zx.mes.hyl.dao.ResourceDaoI;
 import com.zx.mes.hyl.dao.RoleDaoI;
 import com.zx.mes.hyl.dao.UserDaoI;
@@ -20,13 +21,14 @@ import com.zx.mes.hyl.service.RoleServiceI;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+
 
 
 
 @Component
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =RoleServiceI.class,protocol = {"dubbo"},retries = 0,
-		version = "1.0")
+//@com.alibaba.dubbo.config.annotation.Service(interfaceClass =RoleServiceI.class,protocol = {"dubbo"},retries = 0,
+//		version = "1.0")
+@Service(version = "1.0")
 public class RoleServiceImpl implements RoleServiceI {
 
 	@Autowired

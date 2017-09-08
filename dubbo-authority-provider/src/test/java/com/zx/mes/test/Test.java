@@ -14,12 +14,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //@ContextConfiguration(locations = { "classpath:root.xml" })
 public class Test {
     private static final Logger logger=Logger.getLogger(Test.class);
-
-    @org.junit.Test
-    public void test (){
-        ClassPathXmlApplicationContext ac=new ClassPathXmlApplicationContext("classpath:root.xml");
-
-        Object object= ac.getBean("userServiceImpl");
-        logger.info(JSON.toJSONStringWithDateFormat(object,"yyyy-MM-dd HH:mm:ss"));
-    }
+    //
+    //@org.junit.Test
+    //public void test (){
+    //    ClassPathXmlApplicationContext ac=new ClassPathXmlApplicationContext("classpath:root.xml");
+    //
+    //    Object object= ac.getBean("userServiceImpl");
+    //    logger.info(JSON.toJSONStringWithDateFormat(object,"yyyy-MM-dd HH:mm:ss"));
+    //}
 }

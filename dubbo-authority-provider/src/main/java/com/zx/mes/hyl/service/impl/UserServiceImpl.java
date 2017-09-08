@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.zx.mes.hyl.dao.RoleDaoI;
 import com.zx.mes.hyl.dao.UserDaoI;
 import com.zx.mes.hyl.model.Tresource;
@@ -28,8 +29,9 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass =UserServiceI.class,protocol = {"dubbo"},retries = 0,
-		version = "1.0")
+//@com.alibaba.dubbo.config.annotation.Service(interfaceClass =UserServiceI.class,protocol = {"dubbo"},retries = 0,
+//		version = "1.0")
+@Service(version = "1.0")
 public class UserServiceImpl implements UserServiceI {
 
 	@Autowired
