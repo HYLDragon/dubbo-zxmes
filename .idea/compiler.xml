@@ -10,6 +10,7 @@
         <module name="dubbo-authority-consumer" />
         <module name="dubbo-authority-entity" />
         <module name="dubbo-authority-provider" />
+        <module name="dubbo-authority-test" />
         <module name="dubbo-common" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="dubbo-authority-consumer" target="1.5" />
       <module name="dubbo-authority-entity" target="1.5" />
       <module name="dubbo-authority-provider" target="1.5" />
+      <module name="dubbo-authority-test" target="1.5" />
       <module name="dubbo-common" target="1.5" />
       <module name="dubbo-zxmes" target="1.5" />
     </bytecodeTargetLevel>

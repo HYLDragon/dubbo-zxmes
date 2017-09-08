@@ -1,11 +1,6 @@
 package com.zx.mes.hyl.controller;
 
-import java.util.List;
-import java.util.UUID;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.alibaba.fastjson.JSON;
 import com.zx.mes.hyl.pageModel.*;
 import com.zx.mes.hyl.service.ResourceServiceI;
 import com.zx.mes.hyl.service.RoleServiceI;
@@ -18,9 +13,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
-
-import com.alibaba.fastjson.JSON;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * 用户控制器

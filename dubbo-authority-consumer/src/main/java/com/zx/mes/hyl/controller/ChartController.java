@@ -1,15 +1,12 @@
 package com.zx.mes.hyl.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.alibaba.fastjson.JSON;
 import com.zx.mes.hyl.service.UserServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
-
-import com.alibaba.fastjson.JSON;
+import javax.servlet.http.HttpServletRequest;
 
 
 /**

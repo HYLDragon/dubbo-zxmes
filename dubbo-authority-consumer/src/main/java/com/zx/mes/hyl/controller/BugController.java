@@ -1,9 +1,5 @@
 package com.zx.mes.hyl.controller;
 
-import java.util.UUID;
-
-import javax.servlet.http.HttpServletRequest;
-
 import com.zx.mes.hyl.pageModel.Bug;
 import com.zx.mes.hyl.pageModel.DataGrid;
 import com.zx.mes.hyl.pageModel.Json;
@@ -14,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.UUID;
 
 
 /**

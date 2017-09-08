@@ -30,4 +30,6 @@
 
 	<bean id="bugService" class="com.zx.mes.hyl.service.impl.BugServiceImpl"></bean>
 
+	<!--<dubbo:annotation package="com.zx.mes.hyl.service"/>-->
+
 </beans>
