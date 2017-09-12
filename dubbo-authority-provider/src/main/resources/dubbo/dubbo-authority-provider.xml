@@ -26,10 +26,26 @@
 	<dubbo:protocol name="dubbo" port="20880" />
 
 	<!--<dubbo:annotation package="com.zx.mes.hyl.service,com.zx.mes.hyl.service.impl" />-->
-	<dubbo:service interface="com.zx.mes.hyl.service.BugServiceI" ref="bugService"/>
+	<dubbo:service interface="com.zx.mes.hyl.service.BugServiceI" ref="bugServiceImpl"/>
+	<bean id="bugServiceImpl" class="com.zx.mes.hyl.service.impl.BugServiceImpl"></bean>
 
-	<bean id="bugService" class="com.zx.mes.hyl.service.impl.BugServiceImpl"></bean>
+	<dubbo:service interface="com.zx.mes.hyl.service.BugTypeServiceI" ref="bugTypeServiceImpl"/>
+	<bean id="bugTypeServiceImpl" class="com.zx.mes.hyl.service.impl.BugTypeServiceImpl"></bean>
 
-	<!--<dubbo:annotation package="com.zx.mes.hyl.service"/>-->
+	<dubbo:service interface="com.zx.mes.hyl.service.InitServiceI" ref="initServiceImpl"/>
+	<bean id="initServiceImpl" class="com.zx.mes.hyl.service.impl.InitServiceImpl"></bean>
+
+	<dubbo:service interface="com.zx.mes.hyl.service.ResourceServiceI" ref="resourceServiceImpl"/>
+	<bean id="resourceServiceImpl" class="com.zx.mes.hyl.service.impl.ResourceServiceImpl"></bean>
+
+	<dubbo:service interface="com.zx.mes.hyl.service.ResourceTypeServiceI" ref="resourceTypeServiceImpl"/>
+	<bean id="resourceTypeServiceImpl" class="com.zx.mes.hyl.service.impl.ResourceTypeServiceImpl"></bean>
+
+	<dubbo:service interface="com.zx.mes.hyl.service.RoleServiceI" ref="roleServiceImpl"/>
+	<bean id="roleServiceImpl" class="com.zx.mes.hyl.service.impl.RoleServiceImpl"></bean>
+
+	<dubbo:service interface="com.zx.mes.hyl.service.UserServiceI" ref="userServiceImpl"/>
+	<bean id="userServiceImpl" class="com.zx.mes.hyl.service.impl.UserServiceImpl"></bean>
+	<!--<dubbo:annotation package="com.zx.mes.hyl.service.impl"/>-->
 
 </beans>

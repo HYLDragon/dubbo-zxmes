@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 @Component
 //@com.alibaba.dubbo.config.annotation.Service(interfaceClass=com.zx.mes.hyl.service.BugServiceI.class, protocol={"dubbo"},
 //		retries=0,version = "1.0")
-//@Service(version = "1.0")
+@Service(version = "1.0")
 public class BugServiceImpl implements BugServiceI {
 
 	@Autowired
