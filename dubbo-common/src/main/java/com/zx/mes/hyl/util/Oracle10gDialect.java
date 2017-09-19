@@ -1,10 +1,10 @@
 package com.zx.mes.hyl.util;
 
-import org.hibernate.dialect.Oracle9iDialect;
-import org.hibernate.dialect.function.SQLFunctionTemplate;
-import org.hibernate.sql.ANSIJoinFragment;
-import org.hibernate.sql.JoinFragment;
-import org.hibernate.type.StandardBasicTypes;
+//import org.hibernate.dialect.Oracle9iDialect;
+//import org.hibernate.dialect.function.SQLFunctionTemplate;
+//import org.hibernate.sql.ANSIJoinFragment;
+//import org.hibernate.sql.JoinFragment;
+//import org.hibernate.type.StandardBasicTypes;
 
 /**
  * 修复BUG
@@ -14,17 +14,17 @@ import org.hibernate.type.StandardBasicTypes;
  * @author 
  * 
  */
-public class Oracle10gDialect extends Oracle9iDialect {
-
-	public Oracle10gDialect() {
-		super();
-		registerFunction("second", new SQLFunctionTemplate(StandardBasicTypes.INTEGER, "to_char(?1, 'SS')"));
-		registerFunction("minute", new SQLFunctionTemplate(StandardBasicTypes.INTEGER, "to_char(?1, 'MI')"));
-		registerFunction("hour", new SQLFunctionTemplate(StandardBasicTypes.INTEGER, "to_char(?1, 'HH24')"));
-	}
-
-	public JoinFragment createOuterJoinFragment() {
-		return new ANSIJoinFragment();
-	}
-
-}
+//public class Oracle10gDialect extends Oracle9iDialect {
+//
+//	public Oracle10gDialect() {
+//		super();
+//		registerFunction("second", new SQLFunctionTemplate(StandardBasicTypes.INTEGER, "to_char(?1, 'SS')"));
+//		registerFunction("minute", new SQLFunctionTemplate(StandardBasicTypes.INTEGER, "to_char(?1, 'MI')"));
+//		registerFunction("hour", new SQLFunctionTemplate(StandardBasicTypes.INTEGER, "to_char(?1, 'HH24')"));
+//	}
+//
+//	public JoinFragment createOuterJoinFragment() {
+//		return new ANSIJoinFragment();
+//	}
+//
+//}

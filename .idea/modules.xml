@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-activemq-consumer/dubbo-activemq-consumer.iml" filepath="$PROJECT_DIR$/dubbo-activemq-consumer/dubbo-activemq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-activemq-entity/dubbo-activemq-entity.iml" filepath="$PROJECT_DIR$/dubbo-activemq-entity/dubbo-activemq-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-activemq-provider/dubbo-activemq-provider.iml" filepath="$PROJECT_DIR$/dubbo-activemq-provider/dubbo-activemq-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-authority-api/dubbo-authority-api.iml" filepath="$PROJECT_DIR$/dubbo-authority-api/dubbo-authority-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-authority-consumer/dubbo-authority-consumer.iml" filepath="$PROJECT_DIR$/dubbo-authority-consumer/dubbo-authority-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-authority-entity/dubbo-authority-entity.iml" filepath="$PROJECT_DIR$/dubbo-authority-entity/dubbo-authority-entity.iml" />

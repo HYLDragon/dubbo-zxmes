@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-activemq-consumer" />
+        <module name="dubbo-activemq-entity" />
+        <module name="dubbo-activemq-provider" />
         <module name="dubbo-authority-api" />
         <module name="dubbo-authority-consumer" />
         <module name="dubbo-authority-entity" />
@@ -15,6 +18,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dubbo-activemq-consumer" target="1.5" />
+      <module name="dubbo-activemq-entity" target="1.5" />
+      <module name="dubbo-activemq-provider" target="1.5" />
       <module name="dubbo-authority-api" target="1.5" />
       <module name="dubbo-authority-consumer" target="1.5" />
       <module name="dubbo-authority-entity" target="1.5" />
