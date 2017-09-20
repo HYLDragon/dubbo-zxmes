@@ -6,14 +6,19 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>dubbo-activemq-entity</artifactId>
+    <artifactId>dubbo-activemq-api</artifactId>
     <packaging>jar</packaging>
-    <name>dubbo-activemq-entity Maven Webapp</name>
+    <name>dubbo-activemq-api Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
 
+        <dependency>
+            <groupId>com.zx.mes.hyl</groupId>
+            <artifactId>dubbo-activemq-entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
-        <finalName>dubbo-activemq-entity</finalName>
+        <finalName>dubbo-activemq-api</finalName>
     </build>
 </project>
