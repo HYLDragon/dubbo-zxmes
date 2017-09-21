@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubbo-pollute-provider:war">
+    <output-path>$PROJECT_DIR$/dubbo-pollute-provider/target</output-path>
+    <root id="archive" name="dubbo-pollute-provider.war">
+      <element id="artifact" artifact-name="dubbo-pollute-provider:war exploded" />
+    </root>
+  </artifact>
+</component>

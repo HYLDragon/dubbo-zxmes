@@ -11,6 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-authority-entity/dubbo-authority-entity.iml" filepath="$PROJECT_DIR$/dubbo-authority-entity/dubbo-authority-entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-authority-provider/dubbo-authority-provider.iml" filepath="$PROJECT_DIR$/dubbo-authority-provider/dubbo-authority-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-common/dubbo-common.iml" filepath="$PROJECT_DIR$/dubbo-common/dubbo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-pollute-api/dubbo-pollute-api.iml" filepath="$PROJECT_DIR$/dubbo-pollute-api/dubbo-pollute-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-pollute-entity/dubbo-pollute-entity.iml" filepath="$PROJECT_DIR$/dubbo-pollute-entity/dubbo-pollute-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-pollute-provider/dubbo-pollute-provider.iml" filepath="$PROJECT_DIR$/dubbo-pollute-provider/dubbo-pollute-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-zxmes.iml" filepath="$PROJECT_DIR$/dubbo-zxmes.iml" />
     </modules>
   </component>

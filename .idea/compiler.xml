@@ -16,6 +16,9 @@
         <module name="dubbo-authority-provider" />
         <module name="dubbo-authority-test" />
         <module name="dubbo-common" />
+        <module name="dubbo-pollute-api" />
+        <module name="dubbo-pollute-entity" />
+        <module name="dubbo-pollute-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +32,9 @@
       <module name="dubbo-authority-provider" target="1.5" />
       <module name="dubbo-authority-test" target="1.5" />
       <module name="dubbo-common" target="1.5" />
+      <module name="dubbo-pollute-api" target="1.5" />
+      <module name="dubbo-pollute-entity" target="1.5" />
+      <module name="dubbo-pollute-provider" target="1.5" />
       <module name="dubbo-zxmes" target="1.5" />
     </bytecodeTargetLevel>
   </component>

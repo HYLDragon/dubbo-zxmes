@@ -15,6 +15,9 @@
       <module>dubbo-activemq-consumer</module>
       <module>dubbo-activemq-entity</module>
         <module>dubbo-activemq-api</module>
+        <module>dubbo-pollute-entity</module>
+        <module>dubbo-pollute-provider</module>
+        <module>dubbo-pollute-api</module>
     </modules>
 
   <build>
